@@ -22,20 +22,24 @@ export async function POST(request: Request) {
       message: message || "",
     };
 
-    const webhookUrl = process.env.GOOGLE_SHEETS_SCRIPT_URL;
+    const webhookUrl =
+      process.env.GOOGLE_SHEETS_SCRIPT_URL ||
+      "https://script.google.com/macros/s/AKfycbz01ag_yFBLw1B16V5-tY69noqNn8Em0LotsnJy_jSEWzK1bcaBi0PmWhjgow-dB-c_/exec";
 
     if (webhookUrl) {
       // Forward submission to Google Apps Script Web App
-      const response = await fetch(webhookUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) {
-        console.error("Google Sheets webhook error:", await response.text());
+      try {
+        const response = await fetch(webhookUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+          redirect: "follow",
+        });
+        console.log("Google Sheets webhook response status:", response.status);
+      } catch (err) {
+        console.error("Error forwarding to Google Sheets webhook:", err);
       }
     } else {
       console.log(
