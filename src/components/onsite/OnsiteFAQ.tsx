@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FadeIn } from "@/components/shared/FadeIn";
+import { SectionHeader } from "@/components/shared/SectionHeader";
 import { ChevronDown } from "lucide-react";
 import { faqItems } from "@/lib/faqData";
 
@@ -13,20 +14,14 @@ export function OnsiteFAQ() {
   };
 
   return (
-    <section id="faq" className="bg-[#FCFAF7] py-20 md:py-28 border-t border-[#E8E1D7]">
+    <section id="faq" className="bg-[#FCFAF7] py-20 md:py-36 border-t border-[#E8E1D7]">
       <div className="max-w-[840px] mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <FadeIn>
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="font-serif text-[clamp(2.2rem,4.5vw,3.4rem)] font-light text-[#262626] leading-[1.12]">
-              Frequently Asked Questions <br />
-              <em className="italic font-normal text-[#5E7052]">about our onsite wellness programs.</em>
-            </h2>
-            <p className="font-sans text-base text-[#6D6D6D] leading-relaxed mt-4 max-w-[540px] mx-auto">
-              Clear, direct answers regarding property requirements, instructor credentials, equipment setup, and program logistics.
-            </p>
-          </div>
-        </FadeIn>
+        <SectionHeader
+          eyebrow="Knowledge Base"
+          title="Frequently asked questions"
+          italicTitle="about our programs."
+        />
 
         {/* FAQ Accordion */}
         <div className="space-y-4">
@@ -34,10 +29,10 @@ export function OnsiteFAQ() {
             const isOpen = openIndex === index;
             return (
               <FadeIn key={item.question} delay={index * 0.05}>
-                <div className="bg-[#F8F5EF]/80 border border-[#E8E1D7] rounded-2xl overflow-hidden transition-colors duration-200">
+                <div className="bg-[#F8F5EF]/60 border border-[#E8E1D7] rounded-2xl overflow-hidden transition-colors duration-200">
                   <button
                     onClick={() => toggle(index)}
-                    className="w-full flex items-center justify-between p-6 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5E7052] rounded-2xl"
+                    className="w-full flex items-center justify-between p-6 text-left focus:outline-none rounded-2xl"
                     aria-expanded={isOpen}
                   >
                     <h3 className="font-serif text-lg md:text-xl font-light text-[#262626] pr-4">

@@ -1,50 +1,48 @@
 "use client";
 
 import { FadeIn } from "@/components/shared/FadeIn";
+import { SectionHeader } from "@/components/shared/SectionHeader";
 import { Sparkles, Calendar, ClipboardCheck, Dumbbell, ShieldCheck } from "lucide-react";
 
 const inclusions = [
   {
     icon: ShieldCheck,
     title: "Certified RYT Instructors",
-    description: "Experienced RYT-200/500 certified yoga instructors with Yoga Alliance registration and specialized travel recovery training.",
+    description: "Experienced, fully insured professional yoga guidance focused on safety and guest recovery.",
   },
   {
     icon: Dumbbell,
     title: "Commercial Props & Mats",
-    description: "High-density non-slip yoga mats, supportive cork blocks, and woven cotton alignment straps supplied for all attendees.",
+    description: "High-density non-slip yoga mats, supportive cork blocks, and cotton straps provided for all attendees.",
   },
   {
     icon: ClipboardCheck,
     title: "Setup & Breakdown",
-    description: "Complete space layout preparation 30 minutes prior to session start and immediate clearing post-session.",
+    description: "Complete preparation of the practice space beforehand and clearing it post-session.",
   },
   {
     icon: Sparkles,
-    title: "Medical-Grade Sanitization",
-    description: "Strict sanitization of all mats and props following eco-friendly hospitality cleanliness standards.",
+    title: "Medical-Grade Cleaning",
+    description: "Strict post-session cleaning and sanitization of all mats and equipment.",
   },
   {
     icon: Calendar,
     title: "$2M Liability Coverage",
-    description: "Full $2,000,000 commercial general liability insurance protecting your property and guests during every session.",
+    description: "Full $2,000,000 commercial general liability insurance protecting your property.",
   },
 ];
 
 export function WhatsIncluded() {
   return (
-    <section id="services" className="bg-[#FCFAF7] py-20 md:py-28 border-t border-[#E8E1D7]">
-      <div className="max-w-[1140px] mx-auto px-6 lg:px-8">
+    <section id="services" className="bg-[#FCFAF7] py-20 md:py-36 border-t border-[#E8E1D7]">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
 
         {/* Header */}
-        <FadeIn>
-          <div className="max-w-[740px] mb-12 md:mb-16">
-            <h2 className="font-serif text-[clamp(2.2rem,4.5vw,3.6rem)] font-light text-[#262626] leading-[1.12]">
-              What equipment, insurance, and management <br />
-              <em className="italic font-normal text-[#5E7052]">services are included?</em>
-            </h2>
-          </div>
-        </FadeIn>
+        <SectionHeader
+          eyebrow="The Service"
+          title="Everything provided."
+          italicTitle="Effortlessly managed."
+        />
 
         {/* List Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
@@ -54,7 +52,7 @@ export function WhatsIncluded() {
               <FadeIn key={item.title} delay={index * 0.08}>
                 <div className="space-y-4">
                   <div className="text-[#5E7052]">
-                    <Icon size={22} strokeWidth={1.5} />
+                    <Icon size={20} strokeWidth={1.5} />
                   </div>
                   <h3 className="font-serif text-lg font-light text-[#262626] border-b border-[#E8E1D7]/60 pb-2">
                     {item.title}
@@ -72,4 +70,3 @@ export function WhatsIncluded() {
     </section>
   );
 }
-

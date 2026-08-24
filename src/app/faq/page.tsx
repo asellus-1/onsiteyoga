@@ -47,9 +47,9 @@ export default function FAQPage() {
             <span className="font-sans text-xs uppercase tracking-[0.2em] text-[#5E7052] font-semibold block mb-3">
               FAQ &amp; Knowledge Base
             </span>
-            <h1 className="font-serif text-[clamp(2.4rem,5vw,4rem)] font-light text-[#262626] leading-[1.1]">
-              Everything you need to know about <br />
-              <em className="italic font-normal text-[#5E7052]">launching onsite wellness at your property.</em>
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#262626] leading-[1.15]">
+              Clear Answers &amp; Insights <br />
+              <em className="italic font-normal text-[#5E7052]">for Property Managers.</em>
             </h1>
           </div>
         </FadeIn>

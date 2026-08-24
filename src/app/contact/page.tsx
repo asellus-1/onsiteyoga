@@ -58,9 +58,9 @@ export default function ContactPage() {
             <span className="font-sans text-xs uppercase tracking-[0.2em] text-[#5E7052] font-semibold block mb-3">
               Partner With Us
             </span>
-            <h1 className="font-serif text-[clamp(2.4rem,5vw,3.8rem)] font-light text-[#262626] leading-[1.1]">
-              Request a Custom Wellness Proposal <br />
-              <em className="italic font-normal text-[#5E7052]">for your property.</em>
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#262626] leading-[1.15]">
+              Request a Custom Proposal <br />
+              <em className="italic font-normal text-[#5E7052]">for Your Property.</em>
             </h1>
           </div>
         </FadeIn>

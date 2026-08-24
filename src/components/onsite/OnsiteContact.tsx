@@ -1,6 +1,7 @@
 "use client";
 
 import { FadeIn } from "@/components/shared/FadeIn";
+import { SectionHeader } from "@/components/shared/SectionHeader";
 import { useState } from "react";
 
 export function OnsiteContact() {
@@ -55,20 +56,15 @@ export function OnsiteContact() {
   };
 
   return (
-    <section id="property-inquiry" className="bg-[#F8F5EF] py-20 md:py-28 border-t border-[#E8E1D7]">
+    <section id="property-inquiry" className="bg-[#F8F5EF] py-20 md:py-36 border-t border-[#E8E1D7]">
       <div className="max-w-[760px] mx-auto px-6">
         
-        <FadeIn>
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="font-serif text-[clamp(2.2rem,4vw,3.2rem)] font-light text-[#262626] leading-[1.12] mb-4">
-              How can properties request <br />
-              <em className="italic font-normal text-[#5E7052]">a partnership proposal?</em>
-            </h2>
-            <p className="font-sans text-base text-[#6D6D6D] leading-relaxed max-w-[500px] mx-auto">
-              Get in touch with our program management team to discuss customized class formats, schedule frequencies, and property pricing.
-            </p>
-          </div>
-        </FadeIn>
+        <SectionHeader
+          eyebrow="Partner With Us"
+          title="Request a partnership proposal"
+          italicTitle="for your property."
+          description="Get in touch with our team to discuss customized class formats, schedules, and property pricing."
+        />
 
         <FadeIn delay={0.1}>
           {status === "success" ? (

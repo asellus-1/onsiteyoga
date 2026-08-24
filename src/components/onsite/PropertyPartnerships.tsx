@@ -1,25 +1,21 @@
 "use client";
 
 import { FadeIn } from "@/components/shared/FadeIn";
+import { SectionHeader } from "@/components/shared/SectionHeader";
 import { Building2, Briefcase } from "lucide-react";
 
 export function PropertyPartnerships() {
   return (
-    <section id="partnerships" className="bg-[#F8F5EF] py-20 md:py-28 border-t border-[#E8E1D7]">
-      <div className="max-w-[1140px] mx-auto px-6 lg:px-8">
+    <section id="partnerships" className="bg-[#F8F5EF] py-20 md:py-36 border-t border-[#E8E1D7]">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
 
         {/* Header */}
-        <FadeIn>
-          <div className="max-w-[780px] mb-12 md:mb-16">
-            <h2 className="font-serif text-[clamp(2.2rem,4.5vw,3.6rem)] font-light text-[#262626] leading-[1.12]">
-              How do residential communities &amp; workplaces <br />
-              <em className="italic font-normal text-[#5E7052]">benefit from onsite yoga?</em>
-            </h2>
-            <p className="font-sans text-base text-[#6D6D6D] leading-relaxed mt-4">
-              Onsite Yoga &amp; Restore delivers customized wellness programming to luxury apartment residences, multi-family developments, and corporate office spaces.
-            </p>
-          </div>
-        </FadeIn>
+        <SectionHeader
+          eyebrow="Partnerships"
+          title="Residential communities &amp;"
+          italicTitle="corporate workplaces."
+          description="Onsite Yoga &amp; Restore delivers customized wellness programming to luxury apartment residences and corporate office spaces."
+        />
 
         {/* Partnerships Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
@@ -97,4 +93,3 @@ export function PropertyPartnerships() {
     </section>
   );
 }
-

@@ -52,9 +52,9 @@ export default function ServicesPage() {
             <span className="font-sans text-xs uppercase tracking-[0.2em] text-[#5E7052] font-semibold block mb-3">
               Services &amp; Solutions
             </span>
-            <h1 className="font-serif text-[clamp(2.4rem,5vw,4rem)] font-light text-[#262626] leading-[1.1]">
-              Fully managed yoga &amp; restorative programs <br />
-              <em className="italic font-normal text-[#5E7052]">tailored to your property ecosystem.</em>
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#262626] leading-[1.15]">
+              Fully Managed Restorative Programs <br />
+              <em className="italic font-normal text-[#5E7052]">Tailored to Your Property.</em>
             </h1>
             <p className="font-sans text-lg text-[#6D6D6D] leading-relaxed mt-6">
               Whether you manage a boutique luxury hotel, a residential apartment tower, or a corporate headquarters, Onsite Yoga &amp; Restore delivers customized certified instruction, equipment setups, and sanitization protocols.

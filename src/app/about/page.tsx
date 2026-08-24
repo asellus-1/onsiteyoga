@@ -50,9 +50,9 @@ export default function AboutPage() {
             <span className="font-sans text-xs uppercase tracking-[0.2em] text-[#5E7052] font-semibold block mb-3">
               About Onsite Yoga &amp; Restore
             </span>
-            <h1 className="font-serif text-[clamp(2.4rem,5vw,4.2rem)] font-light text-[#262626] leading-[1.1]">
-              Elevating property wellness through <br />
-              <em className="italic font-normal text-[#5E7052]">certified, turnkey restorative instruction.</em>
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#262626] leading-[1.15]">
+              Elevating Property Wellness <br />
+              <em className="italic font-normal text-[#5E7052]">Through Turnkey Instruction.</em>
             </h1>
             <p className="font-sans text-lg text-[#6D6D6D] leading-relaxed mt-6">
               Onsite Yoga &amp; Restore was founded to solve a major gap in modern hospitality: guests want authentic restorative wellness, but property management teams lack the bandwidth to recruit instructors, maintain equipment, and manage scheduling logistics.
@@ -64,8 +64,8 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <FadeIn>
-              <h2 className="font-serif text-3xl font-light text-[#262626]">
-                What standards govern our instructor network?
+              <h2 className="font-serif text-2xl sm:text-3xl font-light text-[#262626]">
+                Rigorous Instructor &amp; Safety Standards
               </h2>
               <p className="font-sans text-base text-[#6D6D6D] leading-relaxed">
                 Every teacher on our platform is minimum <strong>RYT-200 or RYT-500 certified</strong> through Yoga Alliance with specialized training in restorative postures, travel recovery, and trauma-informed breathwork.
