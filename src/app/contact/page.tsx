@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { FadeIn } from "@/components/shared/FadeIn";
 import { OnsiteContact } from "@/components/onsite/OnsiteContact";
+import { safeJsonLd } from "@/lib/jsonLd";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://onsiteyoga.com";
 
@@ -45,11 +46,11 @@ export default function ContactPage() {
     <main className="bg-[#FCFAF7] min-h-screen pt-32 pb-24 md:pt-40 md:pb-32">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={safeJsonLd(breadcrumbSchema)}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+        dangerouslySetInnerHTML={safeJsonLd(contactPageSchema)}
       />
       <div className="max-w-[1140px] mx-auto px-6 lg:px-8 mb-12 text-center">
         <FadeIn>

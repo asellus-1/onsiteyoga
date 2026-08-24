@@ -3,6 +3,7 @@ import { FadeIn } from "@/components/shared/FadeIn";
 import Image from "next/image";
 import Link from "next/link";
 import { ShieldCheck, Award, Users, HeartHandshake } from "lucide-react";
+import { safeJsonLd } from "@/lib/jsonLd";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://onsiteyoga.com";
 
@@ -39,7 +40,7 @@ export default function AboutPage() {
     <main className="bg-[#FCFAF7] min-h-screen pt-32 pb-24 md:pt-40 md:pb-32">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={safeJsonLd(breadcrumbSchema)}
       />
       <div className="max-w-[1140px] mx-auto px-6 lg:px-8 space-y-20">
         

@@ -12,9 +12,9 @@ export function OnsiteConcept() {
           {/* Left Text Column */}
           <div className="lg:col-span-6 space-y-6">
             <FadeIn>
-              <h2 className="font-serif text-[clamp(2.2rem,4vw,3.4rem)] font-light text-[#262626] leading-[1.12] tracking-tight">
-                What is Onsite Yoga &amp; Restore? <br />
-                <em className="italic font-normal text-[#5E7052]">Fully managed property wellness.</em>
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-light text-[#262626] leading-[1.15] tracking-tight">
+                Turnkey On-Property Wellness, <br />
+                <em className="italic font-normal text-[#5E7052]">Seamlessly Managed.</em>
               </h2>
             </FadeIn>
 

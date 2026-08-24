@@ -7,7 +7,7 @@ export function OnsiteHero() {
     <section className="relative min-h-[75vh] flex items-center justify-center bg-[#FCFAF7] pt-32 pb-24 md:pt-44 md:pb-32">
       <div className="relative z-10 max-w-[840px] mx-auto px-6 text-center">
         <FadeIn delay={0.1}>
-          <h1 className="font-serif text-[clamp(2.4rem,5.5vw,4.5rem)] font-light text-[#262626] leading-[1.08] tracking-tight mb-8">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light text-[#262626] leading-[1.15] tracking-tight mb-8">
             Onsite Restorative Yoga &amp; Travel Recovery <br className="hidden sm:block" />
             <em className="italic font-normal text-[#5E7052]">for Luxury Hotels &amp; Properties.</em>
           </h1>

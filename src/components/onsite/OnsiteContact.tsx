@@ -10,6 +10,7 @@ export function OnsiteContact() {
     email: "",
     propertyType: "",
     message: "",
+    website_url_hp: "",
   });
 
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -79,7 +80,7 @@ export function OnsiteContact() {
               <button
                 onClick={() => {
                   setStatus("idle");
-                  setFormData({ name: "", property: "", email: "", propertyType: "", message: "" });
+                  setFormData({ name: "", property: "", email: "", propertyType: "", message: "", website_url_hp: "" });
                 }}
                 className="mt-4 inline-flex items-center justify-center h-[38px] px-6 rounded-full font-sans text-xs tracking-wider uppercase font-semibold border border-[#5E7052] text-[#5E7052] hover:bg-[#5E7052] hover:text-[#FCFAF7] transition-all"
               >
@@ -89,6 +90,19 @@ export function OnsiteContact() {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-8 bg-[#FCFAF7]/60 border border-[#E8E1D7] rounded-3xl p-6 md:p-12 shadow-xs">
               
+              {/* Hidden Honeypot Input (Trap for Automated Spam Bots) */}
+              <input
+                type="text"
+                id="website_url_hp"
+                name="website_url_hp"
+                value={formData.website_url_hp}
+                onChange={handleChange}
+                tabIndex={-1}
+                autoComplete="off"
+                className="hidden opacity-0 w-0 h-0 absolute -z-10"
+                aria-hidden="true"
+              />
+
               {status === "error" && (
                 <div className="p-4 bg-red-50 border border-red-200 rounded-2xl text-red-700 text-sm font-sans text-center">
                   {errorMessage}

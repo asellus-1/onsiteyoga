@@ -5,6 +5,7 @@ import { WhatsIncluded } from "@/components/onsite/WhatsIncluded";
 import { PropertyPartnerships } from "@/components/onsite/PropertyPartnerships";
 import { ComparisonTable } from "@/components/onsite/ComparisonTable";
 import Link from "next/link";
+import { safeJsonLd } from "@/lib/jsonLd";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://onsiteyoga.com";
 
@@ -41,7 +42,7 @@ export default function ServicesPage() {
     <main className="bg-[#FCFAF7] min-h-screen pt-32 pb-24 md:pt-40 md:pb-32">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={safeJsonLd(breadcrumbSchema)}
       />
       
       {/* Services Hero Header */}
