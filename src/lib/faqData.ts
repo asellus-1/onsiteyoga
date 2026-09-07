@@ -12,7 +12,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "What space and equipment does a property need to host onsite yoga?",
     answer:
-      "Properties need only a quiet indoor or outdoor space (such as a multi-purpose room, terrace, lawn, or studio space). Onsite Yoga & Restore provides all necessary high-density non-slip yoga mats, blocks, straps, and accessories, taking full responsibility for equipment delivery, setup, and medical-grade sanitization.",
+      "Properties need only a quiet indoor or outdoor space (such as a multi-purpose room, terrace, lawn, or studio space). Yoga mats and props will be provided for all attendees, with our team taking full responsibility for equipment delivery, setup, and sanitization.",
   },
   {
     question: "Are Onsite Yoga & Restore instructors certified and insured?",
@@ -32,6 +32,6 @@ export const faqItems: FAQItem[] = [
   {
     question: "How quickly can an onsite yoga program be launched at a property?",
     answer:
-      "Programs can be deployed in as few as 5 to 7 business days following an initial property inquiry and alignment on guest scheduling preferences. We handle all logistics from day one.",
+      "Programs can be deployed in 10 to 15 business days following an initial property inquiry and alignment on guest scheduling preferences. We handle all logistics from day one.",
   },
 ];

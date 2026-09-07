@@ -27,7 +27,7 @@ const benefits = [
   },
   {
     title: "Zero Prop Capital Expense",
-    description: "We supply, clean, sanitize, and maintain all commercial-grade mats, blocks, and alignment straps.",
+    description: "Yoga mats and props will be provided for all attendees, fully cleaned, sanitized, and managed by our team.",
   },
 ];
 

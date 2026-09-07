@@ -7,6 +7,7 @@ import { PropertyPartnerships } from "@/components/onsite/PropertyPartnerships";
 import { ComparisonTable } from "@/components/onsite/ComparisonTable";
 import { HowItWorks } from "@/components/onsite/HowItWorks";
 import { OnsiteFAQ } from "@/components/onsite/OnsiteFAQ";
+import { FounderBio } from "@/components/onsite/FounderBio";
 import { OnsiteContact } from "@/components/onsite/OnsiteContact";
 
 export default function OnsiteHomePage() {
@@ -21,6 +22,7 @@ export default function OnsiteHomePage() {
       <ComparisonTable />
       <HowItWorks />
       <OnsiteFAQ />
+      <FounderBio />
       <OnsiteContact />
     </main>
   );

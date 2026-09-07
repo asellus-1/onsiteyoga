@@ -14,7 +14,7 @@ const journeySteps = [
   {
     stage: "02. Turnkey Setup",
     title: "Instructor Prep & Arrival",
-    desc: "Our RYT certified teacher arrives 30 mins early with medical-grade sanitized mats, blocks, and straps, establishing the quiet space.",
+    desc: "Our RYT certified teacher arrives 30 mins early with sanitized equipment—yoga mats and props will be provided for all attendees.",
     icon: ShieldCheck,
   },
   {

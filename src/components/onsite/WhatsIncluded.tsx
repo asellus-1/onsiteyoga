@@ -12,8 +12,8 @@ const inclusions = [
   },
   {
     icon: Dumbbell,
-    title: "Commercial Props & Mats",
-    description: "High-density non-slip yoga mats, supportive cork blocks, and cotton straps provided for all attendees.",
+    title: "Mats & Props Provided",
+    description: "Yoga mats and props will be provided for all attendees.",
   },
   {
     icon: ClipboardCheck,

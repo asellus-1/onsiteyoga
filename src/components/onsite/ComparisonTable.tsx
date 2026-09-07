@@ -16,8 +16,8 @@ export function ComparisonTable() {
       appsCheck: false,
     },
     {
-      feature: "Commercial Equipment & Props",
-      onsite: "High-density mats, blocks & straps included",
+      feature: "Equipment & Props Provision",
+      onsite: "Yoga mats and props provided for all attendees",
       inHouse: "Property must purchase & store",
       apps: "Guest must bring own equipment",
       onsiteCheck: true,

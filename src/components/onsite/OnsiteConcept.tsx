@@ -21,7 +21,7 @@ export function OnsiteConcept() {
             <FadeIn delay={0.1}>
               <div className="space-y-5 font-sans text-base text-[#6D6D6D] leading-relaxed">
                 <p>
-                  Onsite Yoga &amp; Restore is a turnkey wellness service that brings certified yoga instructors, high-density non-slip mats, and restorative props directly to hotels, luxury apartment communities, and corporate offices.
+                  Onsite Yoga &amp; Restore is a turnkey wellness service that brings certified yoga instructors directly to hotels, luxury apartment communities, and corporate offices. Yoga mats and props will be provided for all attendees.
                 </p>
                 <p>
                   We eliminate hotel staff overhead by handling 100% of room setup, participant check-in, instructor scheduling, post-session prop cleaning, and equipment maintenance.
@@ -33,13 +33,14 @@ export function OnsiteConcept() {
           {/* Right Image Column */}
           <div className="lg:col-span-6">
             <FadeIn delay={0.15}>
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden max-w-[500px] mx-auto lg:mx-0 border border-[#E8E1D7] shadow-xs">
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden max-w-[460px] mx-auto lg:mx-0 border border-[#E8E1D7] shadow-xs">
                 <Image
-                  src="/yoga2.jpeg"
-                  alt="Certified restorative onsite yoga class hosted at a luxury property"
+                  src="/images/generic4.jpeg"
+                  alt="Mark Vajen (Yogi Manu), Founder of Onsite Yoga & Restore"
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
                 />
               </div>
             </FadeIn>

@@ -12,7 +12,7 @@ const metrics = [
   {
     value: "100%",
     label: "Prop Logistics Included",
-    detail: "Commercial mats delivered, sanitized, and stored",
+    detail: "Yoga mats and props provided for all attendees",
   },
   {
     value: "$2,000,000",
@@ -20,7 +20,7 @@ const metrics = [
     detail: "Full commercial insurance protection per session",
   },
   {
-    value: "5–7 Days",
+    value: "10–15 Days",
     label: "Onboarding Launch Time",
     detail: "Rapid property setup for immediate availability",
   },

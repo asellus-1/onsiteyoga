@@ -59,7 +59,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#3A3A3A] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-sans text-[#737373]">
-          <p>© {new Date().getFullYear()} Onsite Yoga &amp; Restore. All rights reserved.</p>
+          <p>©️ 2026 Onsite Yoga &amp; Restore, a Yogi Manu LLC company. All rights reserved.</p>
           <div className="flex items-center gap-6 text-xs text-[#A3A3A3]">
             <Link href="/privacy" className="hover:text-[#FCFAF7] transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-[#FCFAF7] transition-colors">Terms of Service</Link>

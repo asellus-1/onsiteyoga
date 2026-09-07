@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ShieldCheck, Award, Users, HeartHandshake } from "lucide-react";
 import { safeJsonLd } from "@/lib/jsonLd";
+import { FounderBio } from "@/components/onsite/FounderBio";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://onsiteyoga.com";
 
@@ -42,7 +43,7 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={safeJsonLd(breadcrumbSchema)}
       />
-      <div className="max-w-[1140px] mx-auto px-6 lg:px-8 space-y-20">
+      <div className="max-w-[1140px] mx-auto px-6 lg:px-8 space-y-20 mb-20">
         
         {/* Header */}
         <FadeIn>
@@ -83,6 +84,7 @@ export default function AboutPage() {
                   alt="Certified RYT yoga instructor leading restorative session"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </FadeIn>
@@ -147,7 +149,13 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* CTA */}
+      </div>
+
+      {/* Founder Story Section */}
+      <FounderBio />
+
+      {/* CTA */}
+      <div className="max-w-[1140px] mx-auto px-6 lg:px-8 mt-20">
         <FadeIn>
           <div className="bg-[#262626] text-[#FCFAF7] rounded-3xl p-10 md:p-14 text-center space-y-6">
             <h2 className="font-serif text-3xl md:text-4xl font-light">
@@ -166,8 +174,8 @@ export default function AboutPage() {
             </div>
           </div>
         </FadeIn>
-
       </div>
+
     </main>
   );
 }
