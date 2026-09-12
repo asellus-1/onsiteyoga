@@ -52,7 +52,11 @@ export function Navbar() {
             <Link
               key={link.label}
               href={link.href}
-              className="font-sans text-xs tracking-wider uppercase text-[#6D6D6D] hover:text-[#262626] transition-colors duration-200 font-medium active:opacity-70"
+              className={`font-sans text-xs tracking-wider uppercase transition-colors duration-200 font-medium active:opacity-70 ${
+                scrolled
+                  ? "text-[#6D6D6D] hover:text-[#262626]"
+                  : "text-white/85 hover:text-white"
+              }`}
             >
               {link.label}
             </Link>
@@ -63,7 +67,11 @@ export function Navbar() {
         <div className="hidden md:block">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center h-[38px] px-5 rounded-full font-sans text-xs tracking-wider uppercase font-semibold bg-[#262626] text-[#FCFAF7] hover:bg-[#5E7052] active:scale-[0.97] transition-all duration-200"
+            className={`inline-flex items-center justify-center h-[38px] px-5 rounded-full font-sans text-xs tracking-wider uppercase font-semibold active:scale-[0.97] transition-all duration-200 ${
+              scrolled
+                ? "bg-[#262626] text-[#FCFAF7] hover:bg-[#5E7052]"
+                : "bg-[#D79B42] text-[#0d0904] hover:bg-[#e5b56a] shadow-md shadow-black/30"
+            }`}
           >
             Partner With Us
           </Link>
@@ -72,7 +80,9 @@ export function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-[#262626] hover:text-[#5E7052] active:scale-[0.95] transition-all"
+          className={`md:hidden p-2 active:scale-[0.95] transition-all ${
+            scrolled ? "text-[#262626] hover:text-[#5E7052]" : "text-white hover:text-[#D79B42]"
+          }`}
           aria-label="Toggle navigation menu"
         >
           {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
