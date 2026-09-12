@@ -1,32 +1,65 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const bannerSlides = [
+  {
+    src: "/images/banner1.jpeg",
+    alt: "Onsite Yoga & Restore",
+    position: "object-[center_30%] md:object-center",
+  },
+  {
+    src: "/images/Maharajji-38.png",
+    alt: "Neem Karoli Baba (Maharajji)",
+    position: "object-[center_20%]",
+  },
+];
+
 export function OnsiteHero() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % bannerSlides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section
       className="relative min-h-[100dvh] flex items-center md:items-end overflow-hidden bg-[#0d0904] pt-28 pb-16 md:pt-0 md:pb-28"
       aria-label="Hero"
     >
-      {/* Background image with slow scale animation */}
-      <motion.div
-        className="absolute inset-0 z-0"
-        initial={{ scale: 1.05 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 2.4, ease: [0.25, 0.1, 0.25, 1] }}
-      >
-        <Image
-          src="/images/banner1.jpeg"
-          alt="Onsite Yoga & Restore"
-          fill
-          priority
-          className="object-cover object-[center_30%] md:object-center"
-          sizes="100vw"
-        />
-        {/* Dark overlay gradient for balanced contrast top & bottom */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d0904]/75 via-[#0d0904]/55 to-[#0d0904]/90" />
-      </motion.div>
+      {/* Background Rotating Banner Images with 3s interval and smooth transition */}
+      {bannerSlides.map((slide, index) => {
+        const isActive = index === currentSlide;
+        return (
+          <div
+            key={slide.src}
+            className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${
+              isActive ? "opacity-100 scale-100 z-0" : "opacity-0 z-0 pointer-events-none"
+            }`}
+            aria-hidden={!isActive}
+          >
+            <Image
+              src={slide.src}
+              alt={slide.alt}
+              fill
+              priority={index === 0}
+              className={`object-cover ${slide.position} transition-transform duration-[4000ms] ease-out ${
+                isActive ? "scale-100" : "scale-105"
+              }`}
+              sizes="100vw"
+            />
+          </div>
+        );
+      })}
+
+      {/* Dark overlay gradient for balanced contrast top & bottom */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#0d0904]/75 via-[#0d0904]/55 to-[#0d0904]/90 pointer-events-none" />
 
       {/* Content Container */}
       <div className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12">
@@ -89,6 +122,21 @@ export function OnsiteHero() {
         </div>
       </div>
 
+      {/* Slide Navigation Indicator Dots */}
+      <div className="absolute bottom-8 left-6 sm:left-12 md:left-auto md:right-32 z-20 flex items-center gap-2">
+        {bannerSlides.map((slide, index) => (
+          <button
+            key={slide.src}
+            type="button"
+            onClick={() => setCurrentSlide(index)}
+            aria-label={`Go to slide ${index + 1}`}
+            className={`h-1.5 rounded-full transition-all duration-500 cursor-pointer ${
+              index === currentSlide ? "w-6 bg-[#D79B42]" : "w-1.5 bg-white/40 hover:bg-white/70"
+            }`}
+          />
+        ))}
+      </div>
+
       {/* Animated Scroll Hint (desktop only to prevent mobile overlap) */}
       <motion.a
         href="#concept"
@@ -119,6 +167,3 @@ export function OnsiteHero() {
     </section>
   );
 }
-
-
-
