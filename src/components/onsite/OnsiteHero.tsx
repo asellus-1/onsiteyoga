@@ -23,7 +23,7 @@ export function OnsiteHero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % bannerSlides.length);
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(timer);
   }, []);
@@ -39,7 +39,7 @@ export function OnsiteHero() {
         return (
           <div
             key={slide.src}
-            className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 z-0 transition-opacity duration-[2000ms] ease-in-out ${
               isActive ? "opacity-100 scale-100 z-0" : "opacity-0 z-0 pointer-events-none"
             }`}
             aria-hidden={!isActive}
@@ -49,7 +49,7 @@ export function OnsiteHero() {
               alt={slide.alt}
               fill
               priority={index === 0}
-              className={`object-cover ${slide.position} transition-transform duration-[4000ms] ease-out ${
+              className={`object-cover ${slide.position} transition-transform duration-[7000ms] ease-out ${
                 isActive ? "scale-100" : "scale-105"
               }`}
               sizes="100vw"
