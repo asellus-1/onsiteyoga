@@ -14,7 +14,7 @@ const programs = [
   },
   {
     icon: Plane,
-    title: "Travel Recovery & Reset",
+    title: "Travel Recovery & Restore",
     time: "60 Minutes · Flexible Schedule",
     description:
       "Specifically structured for travelers recovering from long flights and jet lag. Replaces back compression and grounds the nervous system.",

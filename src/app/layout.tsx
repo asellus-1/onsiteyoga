@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Onsite Yoga & Restore | Turnkey Wellness Programs for Hotels & Properties",
   description:
-    "Turnkey restorative yoga instruction, travel recovery reset sessions, and premium equipment setups delivered directly to hotels, residential luxury communities, and corporate workplaces.",
+    "Turnkey restorative yoga instruction, travel recovery Restore sessions, and premium equipment setups delivered directly to hotels, residential luxury communities, and corporate workplaces.",
   alternates: {
     canonical: siteUrl,
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Onsite Yoga & Restore | Turnkey Wellness Programs for Hotels & Properties",
     description:
-      "Turnkey restorative yoga instruction, travel recovery reset sessions, and premium equipment setups delivered directly to hotels, residential luxury communities, and corporate workplaces.",
+      "Turnkey restorative yoga instruction, travel recovery Restore sessions, and premium equipment setups delivered directly to hotels, residential luxury communities, and corporate workplaces.",
     url: siteUrl,
     siteName: "Onsite Yoga & Restore",
     type: "website",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Onsite Yoga & Restore | Turnkey Wellness Programs for Hotels & Properties",
     description:
-      "Turnkey restorative yoga instruction, travel recovery reset sessions, and premium equipment setups delivered directly to hotels, residential luxury communities, and corporate workplaces.",
+      "Turnkey restorative yoga instruction, travel recovery Restore sessions, and premium equipment setups delivered directly to hotels, residential luxury communities, and corporate workplaces.",
     images: ["/images/onsite sharing.png"],
   },
 };
@@ -72,7 +72,7 @@ const organizationSchema = {
     "Fully managed turnkey wellness programming, equipment setup, and certified restorative yoga instruction for hospitality properties, residential communities, and workplaces.",
   knowsAbout: [
     "Restorative Yoga",
-    "Travel Recovery & Reset",
+    "Travel Recovery & Restore",
     "Hotel Amenity Management",
     "Residential Wellness Programs",
     "Corporate Workplace Wellness",
@@ -90,7 +90,7 @@ const serviceSchema = {
   },
   areaServed: "United States",
   description:
-    "Fully managed onsite yoga instruction, travel recovery reset classes, equipment delivery, sanitization, and instructor management for hotels, apartments, and corporate offices.",
+    "Fully managed onsite yoga instruction, travel recovery Restore classes, equipment delivery, sanitization, and instructor management for hotels, apartments, and corporate offices.",
   offers: {
     "@type": "Offer",
     priceCurrency: "USD",

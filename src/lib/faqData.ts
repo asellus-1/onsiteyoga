@@ -22,7 +22,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "What class formats and recovery programs are offered?",
     answer:
-      "We offer three core 60-minute turnkey programs: Morning Gentle Yoga (for circulation and calm focus), Travel Recovery & Reset (for flight decompression and posture alignment), and Evening Restorative (for deep relaxation and sleep readiness). Schedules are tailored to guest arrival patterns and property preferences.",
+      "We offer three core 60-minute turnkey programs: Morning Gentle Yoga (for circulation and calm focus), Travel Recovery & Restore (for flight decompression and posture alignment), and Evening Restorative (for deep relaxation and sleep readiness). Schedules are tailored to guest arrival patterns and property preferences.",
   },
   {
     question: "How much staff operational load is required from hotel or property management?",

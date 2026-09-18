@@ -12,7 +12,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://onsiteyoga.com";
 export const metadata: Metadata = {
   title: "Onsite Wellness Programs & Services | Hotel, Residential & Workplace Yoga",
   description:
-    "Explore our complete range of turnkey restorative yoga programs, travel recovery reset sessions, residential amenities, workplace wellness, and commercial equipment management.",
+    "Explore our complete range of turnkey restorative yoga programs, travel recovery Restore sessions, residential amenities, workplace wellness, and commercial equipment management.",
   alternates: {
     canonical: `${siteUrl}/services`,
   },
@@ -44,7 +44,7 @@ export default function ServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={safeJsonLd(breadcrumbSchema)}
       />
-      
+
       {/* Services Hero Header */}
       <div className="max-w-[1140px] mx-auto px-6 lg:px-8 mb-16">
         <FadeIn>

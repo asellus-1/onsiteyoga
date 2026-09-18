@@ -53,7 +53,7 @@ export function ComparisonTable() {
     },
     {
       feature: "Travel Recovery & Circadian Focus",
-      onsite: "Tailored 60-min arrival & flight reset sequences",
+      onsite: "Tailored 60-min arrival & flight Restore sequences",
       inHouse: "Generic fitness instruction",
       apps: "Generic pre-recorded videos",
       onsiteCheck: true,
@@ -74,7 +74,7 @@ export function ComparisonTable() {
   return (
     <section id="comparison" className="bg-[#F8F5EF] py-20 md:py-36 border-t border-[#E8E1D7]">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-16">
-        
+
         {/* Header */}
         <SectionHeader
           eyebrow="Market Comparison"
