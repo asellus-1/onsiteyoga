@@ -3,12 +3,14 @@
 import { FadeIn } from "@/components/shared/FadeIn";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import Image from "next/image";
-import { ExternalLink, Music } from "lucide-react";
+import { ExternalLink, Globe } from "lucide-react";
 
-function YoutubeIcon({ className = "w-4 h-4" }: { className?: string }) {
+function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
     </svg>
   );
 }
@@ -56,26 +58,26 @@ export function FounderBio() {
                   </p>
                 </div>
 
-                {/* External Social / Music Links */}
+                {/* External Social / Website Links */}
                 <div className="flex flex-wrap items-center gap-3">
                   <a
-                    href="https://www.youtube.com/@YogiManuAwakens"
+                    href="https://www.yogimanu.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#FCFAF7] border border-[#E8E1D7] hover:border-[#5E7052] text-xs font-sans text-[#262626] hover:text-[#5E7052] transition-colors"
                   >
-                    <YoutubeIcon className="w-4 h-4 text-red-600" />
-                    <span>Yogi Manu Awakens</span>
+                    <Globe size={14} className="text-[#5E7052]" />
+                    <span>Yogi Manu Website</span>
                     <ExternalLink size={12} className="opacity-50" />
                   </a>
                   <a
-                    href="https://www.youtube.com/@YogiManuMusic"
+                    href="https://www.instagram.com/onsiteyogaandrestore/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#FCFAF7] border border-[#E8E1D7] hover:border-[#5E7052] text-xs font-sans text-[#262626] hover:text-[#5E7052] transition-colors"
                   >
-                    <Music size={14} className="text-[#5E7052]" />
-                    <span>Yogi Manu Music</span>
+                    <InstagramIcon className="w-3.5 h-3.5 text-[#5E7052]" />
+                    <span>Instagram</span>
                     <ExternalLink size={12} className="opacity-50" />
                   </a>
                 </div>

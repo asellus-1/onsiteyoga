@@ -1,6 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 
+function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
+
 export function Footer() {
   return (
     <footer className="bg-[#262626] text-[#FCFAF7] py-20 md:py-28 border-t border-[#3A3A3A]">
@@ -61,6 +71,15 @@ export function Footer() {
         <div className="pt-8 border-t border-[#3A3A3A] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-sans text-[#737373]">
           <p>©️ 2026 Onsite Yoga &amp; Restore, a Yogi Manu LLC company. All rights reserved.</p>
           <div className="flex items-center gap-6 text-xs text-[#A3A3A3]">
+            <a
+              href="https://www.instagram.com/onsiteyogaandrestore/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#FCFAF7] transition-colors inline-flex items-center gap-1.5"
+            >
+              <InstagramIcon className="w-3.5 h-3.5" />
+              <span>Instagram</span>
+            </a>
             <Link href="/privacy" className="hover:text-[#FCFAF7] transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-[#FCFAF7] transition-colors">Terms of Service</Link>
           </div>

@@ -39,11 +39,11 @@ export function PropertyPartnerships() {
                 <ul className="space-y-2 pt-4 font-sans text-xs text-[#6D6D6D]" role="list">
                   <li className="flex items-center gap-2.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#5E7052]" />
-                    Weekly, bi-weekly, or seasonal schedule options
+                    Multiple scheduling options
                   </li>
                   <li className="flex items-center gap-2.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#5E7052]" />
-                    Multiple class styles (Gentle Vinyasa, Restorative, Mobility)
+                    Multiple class styles (Hatha, Vinyasa, Restorative, Mobility)
                   </li>
                   <li className="flex items-center gap-2.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#5E7052]" />
