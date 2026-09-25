@@ -64,7 +64,30 @@ export function OnsiteContact() {
           title="Request a partnership proposal"
           italicTitle="for your property."
           description="Get in touch with our team to discuss customized class formats, schedules, and property pricing."
+          className="mb-8 md:mb-10"
         />
+
+        <div className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-sans text-[#6D6D6D]">
+          <span>
+            Email:{" "}
+            <a
+              href="mailto:hello@onsiteyogaandrestore.com"
+              className="text-[#262626] hover:text-[#5E7052] underline underline-offset-4 decoration-[#E8E1D7] hover:decoration-[#5E7052] transition-colors"
+            >
+              hello@onsiteyogaandrestore.com
+            </a>
+          </span>
+          <span className="hidden sm:inline text-[#D0C7B8]">•</span>
+          <span>
+            Phone:{" "}
+            <a
+              href="tel:+16145268419"
+              className="text-[#262626] hover:text-[#5E7052] underline underline-offset-4 decoration-[#E8E1D7] hover:decoration-[#5E7052] transition-colors"
+            >
+              (614) 526-8419
+            </a>
+          </span>
+        </div>
 
         <FadeIn delay={0.1}>
           {status === "success" ? (
@@ -151,7 +174,7 @@ export function OnsiteContact() {
                     onChange={handleChange}
                     required
                     disabled={status === "submitting"}
-                    placeholder="sarah@grandhavenhotel.com"
+                    placeholder="you@example.com"
                     className="w-full bg-transparent border-b border-[#E8E1D7] py-3 text-[#262626] font-sans text-base focus:outline-none focus:border-[#5E7052] transition-colors duration-200 disabled:opacity-50"
                   />
                 </div>

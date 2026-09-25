@@ -11,6 +11,15 @@ function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
   );
 }
 
+function YoutubeIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z" />
+      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+    </svg>
+  );
+}
+
 export function Footer() {
   return (
     <footer className="bg-[#262626] text-[#FCFAF7] py-20 md:py-28 border-t border-[#3A3A3A]">
@@ -55,6 +64,24 @@ export function Footer() {
             <p className="font-sans text-sm text-[#A3A3A3] leading-relaxed">
               Interested in introducing turnkey wellness to your hotel guests, residence, or workplace?
             </p>
+            <div className="space-y-1 font-sans text-sm text-[#A3A3A3] pt-1">
+              <div>
+                <a
+                  href="mailto:hello@onsiteyogaandrestore.com"
+                  className="hover:text-[#FCFAF7] transition-colors"
+                >
+                  hello@onsiteyogaandrestore.com
+                </a>
+              </div>
+              <div>
+                <a
+                  href="tel:+16145268419"
+                  className="hover:text-[#FCFAF7] transition-colors"
+                >
+                  (614) 526-8419
+                </a>
+              </div>
+            </div>
             <div className="pt-2">
               <Link
                 href="/contact"
@@ -72,7 +99,16 @@ export function Footer() {
           <p>©️ 2026 Onsite Yoga &amp; Restore, a Yogi Manu LLC company. All rights reserved.</p>
           <div className="flex items-center gap-6 text-xs text-[#A3A3A3]">
             <a
-              href="https://www.instagram.com/onsiteyogaandrestore/"
+              href="https://www.youtube.com/@Onsiteyogaandrestore"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#FCFAF7] transition-colors inline-flex items-center gap-1.5"
+            >
+              <YoutubeIcon className="w-3.5 h-3.5" />
+              <span>YouTube</span>
+            </a>
+            <a
+              href="https://www.instagram.com/onsiteyogaandrestore"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#FCFAF7] transition-colors inline-flex items-center gap-1.5"
